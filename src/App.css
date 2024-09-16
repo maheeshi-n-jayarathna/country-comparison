@@ -1,38 +1,58 @@
 .App {
   text-align: center;
+  height: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comparisoncountry {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  text-align: center;
+  padding-left: 250px;
+}
+
+.comparisoncountry div {
+  display: flex;
+  gap: 20px;
+}
+
+.comparisoncountry div select {
+  height: 40px;
+}
+
+.comparisoncountry div label {
+  margin-top:8px;
+}
+
+.button {
+  background-color: gray;
+  padding: 10px;
   color: white;
+  margin-top: 20px;
+  border-color: gray;
+  width: 300px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.comparison {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.comparison div {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 40%;
+  background-color: rgb(199, 199, 199);
+}
+
+.comparison div p {
+  font-weight: 700;
+}
+
+@media  (max-width: 776px) {
+  .comparisoncountry {
+    display: grid;
+    margin-left: -200px;
   }
 }
